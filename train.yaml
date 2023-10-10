@@ -1,0 +1,22 @@
+# """ Experimental settings """
+backbone: DeepConvNet
+save_path: '/result/'
+
+train:
+  trial_per_batch_task: 4032
+  freeze_epoch: 20
+
+  meta_lr: 0.0001
+  inner_optimizer: adam
+  task_lr: 0.0005
+
+  meta_batch_size: 2
+  mini_task_size: 4032
+  inner_batch_size: 200
+  test_batch_size: 600
+
+  w_decay: 0.0001
+  drop: 0.25
+
+  batch_iter: 300
+  batch_size: 72
