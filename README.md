@@ -38,8 +38,9 @@ Our code can be executed with the configuration file 'train.yaml.' An example ru
 python main.py --config=./train.yaml
 ```
 ---
-If you discover value in this content, kindly reference the following article:
+  
 ## Citation 
+If you discover value in this content, kindly reference the following article:
 ```bibtex
 @article{han2023meta,
   title={META-EEG: Meta-learning-based class-relevant EEG representation learning for zero-calibration brain-computer interfaces},
