@@ -19,7 +19,7 @@ A comparative analysis reveals that META-EEG significantly outperforms all the b
 </p>
 
 ---
-## Requirment 
+## Requirments 
 - python >= 3.9
 - pytorch >= 1.12
 - numpy >= 1.25
