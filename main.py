@@ -89,8 +89,8 @@ def main(config, model, iteration, device, dataset, mini_task_size, Train=False)
 
                 if task_idx != 0 and task_idx % config['train']['meta_batch_size'] == 0 or (task_idx + 1) == len(
                         tasks_data):
-                    outer_loss.div_(config['train']['meta_batch_size'])
-                    outer_loss.backward()
+                    total_loss.div_(config['train']['meta_batch_size'])
+                    total_loss.backward()
                     meta_optimizer.step()
 
             else:
