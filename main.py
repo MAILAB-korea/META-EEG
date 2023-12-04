@@ -87,11 +87,12 @@ def main(config, model, iteration, device, dataset, mini_task_size, Train=False)
                     accuracy += ut.get_accuracy(query_logit, labels)
                     total_loss += outer_loss
 
-                if task_idx != 0 and task_idx % config['train']['meta_batch_size'] == 0 or (task_idx + 1) == len(
+                if task_idx != 0 and (task_idx+1) % config['train']['meta_batch_size'] == 0 or (task_idx + 1) == len(
                         tasks_data):
                     total_loss.div_(config['train']['meta_batch_size'])
                     total_loss.backward()
                     meta_optimizer.step()
+                    total_loss = torch.tensor(0.).to(device)
 
             else:
                 for batch_idx, (inputs, labels) in enumerate(src_loader):
