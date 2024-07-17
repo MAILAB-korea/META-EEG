@@ -26,7 +26,7 @@ A comparative analysis reveals that META-EEG significantly outperforms all the b
   
 ---
 ## Preparation
-We have not attached the dataset files in ```.npy``` format inside the library and code files due to storage limitation. Hence, ```srcdat_```, ```srclbl_``` on line 174 and ```zrdat_```, ```zrlbl_``` on line 175 of ```main.py``` have been replaced with random values. Replace these two lines with the meta-training dataset and the unseen subject dataset of your desired EEG signal dataset, respectively. The datasets used in this study are BCI Competition IV-2a and 2b and CBCIC datasets, which can be downloaded from the links below:
+We have not attached the dataset files in ```.npy``` format inside the library and code files due to storage limitation. Hence, ```srcdat_```, ```srclbl_``` on line 175 and ```zrdat_```, ```zrlbl_``` on line 176 of ```main.py``` have been replaced with random values. Replace these two lines with the meta-training dataset and the unseen subject dataset of your desired EEG signal dataset, respectively. The datasets used in this study are BCI Competition IV-2a and 2b and CBCIC datasets, which can be downloaded from the links below:
 - [BCI Competition IV-2a & BCI Competition IV-2b](https://www.bbci.de/competition/iv/)
 - [CBCIC](https://github.com/5anirban9/Clinical-Brain-Computer-Interfaces-Challenge-WCCI-2020-Glasgow)
 
